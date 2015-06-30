@@ -14,9 +14,9 @@ function do_output($status, $params){
 }
 
 function get_quiz_questions(){
-    $to_go = Array();
+    $to_go = Array(1);
     while(1){
-        $a = rand(1,10);
+        $a = rand(2,20);
         if(!in_array($a,$to_go))
             $to_go[] = $a;
         if(sizeof($to_go)>=5)
